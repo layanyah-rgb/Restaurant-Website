@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!--Internal CSS +z-index in all page-->
+      <style>
+    nav {
+        position: relative;
+        z-index: 100;
+        background-color: #1b263b;
+        padding: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+      </style>
+</head>
+<body>
+	
+	<h1> Sign Up </h1>
+
+<nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+	<form>
+
+		<p> 
+		  <label>Enter Your First Name</label> <br>
+          <input type="text" name="fname" maxlength="25" placeholder="Ahmed" required>
+		</p>
+
+		<p>
+		  <label>Enter Your Last Name</label> <br>
+       	  <input type="text" name="lname" maxlength="25" placeholder="Alghamdi" required>
+		</p>
+
+		<p>
+          <label>Enter Your Email</label> <br>
+  	      <input type="email" placeholder="name@gmail.com" required>
+        </p>
+
+		<p>
+          <label>Enter Your Phone Number</label> <br>
+          <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </p>
+
+		<p>
+          <label>Enter Password</label> <br>
+          <input type="password" namw="pass" placeholder="Password" required>
+        </p>
+
+		<p> 
+		  Gender <br>
+          <input type="radio" name="gender" value="male"> <label>Male</label><br>
+		  <input type="radio" name="gender" value="female"> <label>Female</label><br>
+	      <input type="radio" name="gender" value="no-answer" checked> <label>Prefer not to say</label><br>
+		</p>
+
+		<input type="checkbox" name="terms-and-conditions" value="I agree"> <label>I agree the terms and conditions</label> <br><br>
+
+		<input type="submit" value="Sign Up">
+
+	</form>
+
+        
+
+</body>
+</html>

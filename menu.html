@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Internal CSS +z-index in all page-->
+      <style>
+    nav {
+        position: relative;
+        z-index: 100;
+        background-color: #1b263b;
+        padding: 10px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+      </style>
+</head>
+
+<body>
+
+    <h1>Menu</h1>
+    
+    <!-- Same in all page-->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+    <!--Inter linking-->
+    <div style="text-align: center; margin: 15px; padding: 10px; background: #f2f2f2;">
+        <strong>Quick Navigation: </strong>
+        <a href="#burger-section">Burgers</a> | 
+        <a href="#fries-section">Fries</a> | 
+        <a href="#drink-section">Drinks</a>
+    </div>
+
+
+    <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+
+        <!-- Burger -->
+         <!-- Burgerـ id -->
+        <h2 id="burger-section">Burger</h2>
+        
+        <table style="margin: 0 auto; width: 100%; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid #ccc; padding: 10px;">Image</th>
+                <th style="border: 1px solid #ccc; padding: 10px;">Name and Description</th>
+                <th style="border: 1px solid #ccc; padding: 10px;">Price</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/1chBurger.jpg" alt="Chicken Burger" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Chicken Burger</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">18 SAR</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/1meBurger.jpg" alt="Meet Burger" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Meat Burger</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">20 SAR</td>
+            </tr>
+        </table>
+        <br>
+        <label>How many burgers you want? </label>
+        <input type="number" id="burger" value="0">
+        <br><br>
+
+        <!-- Fries -->
+         <!-- Fries_id -->
+        <h2 id="fries-section">Fries</h2>
+
+        <table style="margin: 0 auto; width: 100%; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid #ccc; padding: 10px;">Image</th>
+                <th style="border: 1px solid #ccc; padding: 10px;">Name and Description</th>
+                <th style="border: 1px solid #ccc; padding: 10px;">Price</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/fries.png" alt="Big Fries" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Big Fries</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">9 SAR</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/fries.png" alt="Medium Fries" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Medium Fries</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">7 SAR</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/fries.png" alt="Small Fries" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Small Fries</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">5 SAR</td>
+            </tr>
+        </table>
+        <br>
+        <label>How many fries you want? </label>
+        <input type="number" id="fries" value="0">
+        <br><br>
+
+        <!-- Drink -->
+         <!-- Drink_id -->
+        <h2 id="drink-section">Drink</h2>
+        
+        <table style="margin: 0 auto; width: 100%; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid #ccc; padding: 10px;">Image</th>
+                <th style="border: 1px solid #ccc; padding: 10px;">Name and Description</th>
+                <th style="border: 1px solid #ccc; padding: 10px;">Price</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/orange.jpg" alt="Orange Juice" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Orange Juice</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">10 SAR</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/apple.jpg" alt="Apple Juice" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Apple Juice</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">10 SAR</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 10px;"><img src="images/water.jpg" alt="Water" width="80" height="80"/></td>
+                <td style="border: 1px solid #ccc; padding: 10px;">Water</td>
+                <td style="border: 1px solid #ccc; padding: 10px;">1 SAR</td>
+            </tr>
+        </table>
+        <br>
+        <label>How many drinks you want? </label>
+        <input type="number" id="drink" value="0">
+        <br><br>
+
+        <button onclick="calculate()" style="padding: 8px 20px; font-weight: bold; cursor: pointer;">Calculate Total</button>
+
+        <h2 id="result" style="margin-top: 20px;">Total = 0</h2>
+
+    </div>
+
+    <!--script-->
+    <script>
+    var total = 0;
+
+    function calculate() {
+        total = 0;
+
+        // Burger
+        var b = parseInt(document.getElementById("burger").value);
+        for (var i = 1; i <= b; i++) {
+            var x = prompt("Which burger? 1=Chicken 2=Meat");
+            if (x == 1) {
+                total = total + 18;
+            }
+            else if (x == 2) {
+                total = total + 20;
+            }
+        }
+
+        // Fries
+        var f = parseInt(document.getElementById("fries").value);
+        for (var i = 1; i <= f; i++) {
+            var x = prompt("Which fries? 1=Big 2=Medium 3=Small");
+            if (x == 1) {
+                total = total + 9;
+            }
+            else if (x == 2) {
+                total = total + 7;
+            }
+            else if (x == 3) {
+                total = total + 5;
+            }
+        }
+
+        // Drink
+        var d = parseInt(document.getElementById("drink").value);
+        for (var i = 1; i <= d; i++) {
+            var x = prompt("Which drink? 1=Orange 2=Apple 3=Water");
+            if (x == 1) {
+                total = total + 10;
+            }
+            else if (x == 2) {
+                total = total + 10;
+            }
+            else if (x == 3) {
+                total = total + 1;
+            }
+        }
+
+        document.getElementById("result").innerHTML = "Total = " + total+"SR";
+    }
+    </script>
+
+</body>
+</html>
